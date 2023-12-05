@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+:root {
+    --colorNude:#f5d4cd;
+    --colorDark: #0a8aab;
+    --colorLavanda: #81A2EF;
+    --colorGreen: #B3DBE5;
+    --colorBlue: #2BAEDE;
+    --colorAlmond: #ffebcd;
+    --colorWhite: #fafafa;
+    --colorViolet:#d4c5e2;
+    --colorComplete:#445761;
+    --colorSignIn: #f9beb2;
+
+}
+
+* { 
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    width:100vw;
+    height:100vh;
+}
+
+#app {
+    position:relative;
+}
+
+
+/* -------------- SignUp -SignIn Component -------------*/
+
+.main-container {
+    background-image: url(https://images.unsplash.com/photo-1602498456745-e9503b30470b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+} 
+.header {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+} 
+.header-title-in {
+    font-size: 40px;
+    color: var(--colorBlue);
+    margin-top: 20px;
+}
+
+.header-subtitle-in {
+   color: var(--colorBlue);
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.header-title-up {
+    font-size: 40px;
+    color: var(--colorBlue);
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field-label {
+    display: block;
+    text-align: center;
+    border: none;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.input-field {
+    border-radius: 20px;
+    border:1px solid var(--colorGreen);
+    text-align: center;
+    padding: 10px;
+    background-color:var(--colorAlmond);
+    width:100%;
+}
+
+.form-sign {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 40px;
+} 
+
+.form-sign-in {
+    background-image:url(https://i.pinimg.com/564x/49/11/0f/49110f0b15b48c68271f6afd255f4480.jpg);
+    opacity: 80%;
+    height: 480px;
+    width: 280px;
+    border:solid 3px var(--colorGreen);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-sign-up {
+    background-image:url(https://i.pinimg.com/564x/49/11/0f/49110f0b15b48c68271f6afd255f4480.jpg);
+    opacity: 80%;
+    height: 520px;
+    width: 280px;
+    border:solid 3px var(--colorGreen);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    width:80px;
+    align-content: center;
+    border-radius: 10px;
+    border:none;
+    text-align: center;
+    font-size: 15px;
+    font-weight:bold;
+    padding: 10px;
+    margin-top:30px;
+    background-color:var(--colorGreen);
+    color:var(--colorDark);
+    border:2px solid var(--colorLavanda);
+}
+
+.button:hover {
+    background-color:var(--colorSignIn);
+}
+
+.account-box {
+    height: 100px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.text-signup  {
+    font-size: 16px;
+    font-weight:bold;
+    margin-bottom: 20px;
+   
+}
+
+.sign-up-link {
+    display: block;
+    text-decoration: none;
+    border-radius: 10px ;
+    border-color:#0a8aab;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--colorViolet);
+    margin-top: 10px;
+    color:var(--colorDark);
+    border:2px solid var(--colorLavanda);
+}
+
+.sign-up-link:hover {
+    background-color:var(--colorSignIn);
+}
+
+/* ---------  MediaQueries SignIn-SignUp  ----------*/
+/* MediaQuery for Tablets and Desktop */
+
+@media screen and (min-width: 768px) {
+.header {
+    height: 50px;
+} 
+
+.header-title-in {
+    font-size: 60px;
+    color: var(--colorBlue);
+    margin-top: 20px;
+}
+
+.header-subtitle-in {
+    font-size: 23px;
+}
+
+.header-title-up {
+    font-size: 50px;
+}
+
+.form-sign {
+   margin-top:10px;
+}
+
+.form-sign-in , .form-sign-up {
+    width: 480px;
+    border-radius: 30px;
+}
+}
+
+ /* -------------------  HOME VIEW  -----------------------*/ 
+
+/* ----------------- Navbar Component ---------------------*/
+/* MediaQuery Mobile First */
+.wrapper {
+   background-color: var(--colorGreen);
+}
+
+.navbar-img {
+    width: 90px;
+}
+  
+nav {
+    display: flex;
+    width: 100%;
+    height:60px ;
+    justify-content: flex-end;
+    align-items: center;
+    font-size:20px;
+}
+
+.nav-links  {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:50px;
+    align-items: center;
+    margin-top: 40px;
+    height: 30px;
+  
+}
+.log-out-welcome {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin:0px 30px 10px 30px;
+    height: 30px;
+}
+
+.link-router  {
+    text-decoration: none;
+    color:var(--colorDark);
+    cursor: pointer;
+}
+.link-router:hover  {
+    color:var(--colorAlmond);
+}
+
+.welcome  {
+    text-decoration: none;
+    color:var(--colorWhite);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.button-logout {
+    width:100px;
+    align-content: center;
+    border-radius: 10px;
+    border:1px solid var(--colorWhite);
+    text-align: center;
+    font-size: 15px;
+    font-weight:bold;
+    padding: 10px;
+    background-color:var(--colorGreen);
+    color:var(--colorDark);
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.button-logout:hover {
+    background-color: var(--colorNude);
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 6px auto;
+    -webkit-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
+    background-color:var(--colorNude);
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top:20px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+.burger-list{
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    overflow: hidden;
+    width: 160px;
+    height: 215px;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.mobile-links {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    transition: all 1s linear;
+    top: -100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 230px;
+    width: 150px;
+    list-style: none;
+    background:var(--colorViolet);
+    border-radius: 0px 0px 20px 0px;
+}
+
+.mobile-links.show-active{
+    left: 10px;
+    top: 0px;
+}
+
+.desktop {
+    display:none;
+}
+
+.mobile {
+    width: 100vw;
+}
+
+
+/* ---------------------  MediaQuery - NavBar Component ----------------------- */
+/* Media Query for Tablets and Desktop */
+@media screen and (min-width: 768px){ 
+    
+.desktop {
+    display: block;
+    width: 100vw;
+    background-color:var(--colorViolet);
+    box-shadow: 1px 1px 1px 0px var(--colorWhite);
+    position:fixed;
+}
+ 
+.mobile {
+    display:none;
+}
+ 
+.hamburger {
+    display: none;
+}
+ 
+.mobile-links {
+    display: none;
+}
+
+}
+
+/* ------------------------ New Task Component -------------------------- */
+
+.container-newtask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.title-newtask {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    margin:20px 0px;
+    color:var(--colorBlue);
+}
+
+.newtask-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 280px;
+    width:70%;
+    background-image:url(https://i.pinimg.com/564x/49/11/0f/49110f0b15b48c68271f6afd255f4480.jpg);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px var(--colorLavanda);
+    border:1px solid var(--colorLavanda);
+}
+
+.input-newtask {
+    height: 50px;
+    width:60%;
+    text-align: center;
+    background-color: var(--colorWhite);
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 20px 0px 20px 0px;
+    border:2px solid var(--colorGreen);
+    font-size: 18px;
+}
+
+.input-newtask-description {
+    height: 70px;
+    width:80%;
+    text-align: center;
+    background-color: var(--colorWhite);
+    border-radius: 10px;
+    font-size: 18px;
+    border:2px solid var(--colorGreen);
+}
+
+.button-add {
+    width:150px;
+    align-content: center;
+    border-radius: 10px;
+    border:none;
+    text-align: center;
+    font-size: 15px;
+    font-weight:bold;
+    padding: 10px;
+    background-color:var(--colorViolet);
+    color:var(--colorBlue);
+    margin-bottom: 10px;
+    border:2px solid var(--colorWhite);
+    cursor: pointer;
+}
+.button-add:hover {
+    background-color: var(--colorNude);
+}
+
+/* Media Queries Big Screen */
+@media (min-width: 1025px){
+.container-newtask {
+    /* margin-top: 70px;  */
+    padding-top: 70px; 
+}
+
+.newtask-box {
+    width: 55%;
+}
+
+.input-newtask {
+    width: 60%;
+}
+}
+/* Small Mobile */
+@media (max-width: 375px){
+.input-newtask ,.input-newtask-description  {
+    font-size: 15px;
+}
+}
+
+
+/* -------------Task Item Component------------------ */
+
+.title-tasks {
+    color:var(--colorLavanda);
+    text-align:center;
+    font-weight: 600;
+    text-decoration:underline;
+
+}
+
+.container-tasklist {
+    background-image:url(https://i.pinimg.com/564x/49/11/0f/49110f0b15b48c68271f6afd255f4480.jpg);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 15px;
+    border-radius: 22px;
+    margin: 30px;
+    height: 150px;
+    box-shadow: 2px 2px 4px 2px var(--colorViolet);
+    border:1px solid var(--colorViolet);
+}
+
+.completed {
+    text-decoration: line-through;
+    color:var(--colorComplete);
+}
+
+.task-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:70%;
+    height:120px;
+    background-color: var(--colorViolet);
+    border:1px solid var(--colorWhite);
+    border-radius: 10px;
+    margin-left: -30px;
+    margin-top: 50px;
+    padding: 5px;
+    gap:10px;
+}
+
+.input-task {
+    width:95%;
+    height:30px;
+    border-radius: 10px;
+    border:1px solid var(--colorGreen);
+    text-align: center;
+}
+.save-btn {
+    width:50px;
+    align-content: center;
+    border-radius: 10px;
+    border:1px solid var(--colorWhite);
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    background-color:var(--colorGreen);
+    color:var(--colorDark);
+    cursor: pointer;
+}
+.save-btn:hover {
+    background-color: var(--colorNude);
+}
+
+.tasks-btn {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.delete-btn ,.edit-btn , .status-btn {
+    color: var(--colorBlue);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--colorNude);
+    border: 2px solid var(--colorViolet);
+    font-weight:500;
+}
+
+.delete-btn:hover ,.edit-btn:hover , .status-btn:hover {
+    background-color: var(--colorLavanda);
+    color: var(--colorNude);
+}
+
+/* --------- MediaQuery Task Item ---------*/
+
+/* Media Query for Small Mobile */
+@media (min-width: 374px) and (max-width: 768px){
+.task-edit {
+margin-left: -60px; 
+}  
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+.container-tasklist {
+    width: 310px;  
+    height: 150px; 
+    margin:30px;
+}
+
+.title-newtask {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 40px;
+}
+    
+.tasks-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.task-edit {
+    margin-left: -45px;
+}
+}
+
+ /* --- Media Query for Laptops and Desktops ---*/
+ @media (min-width: 1025px) {
+.tasks-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.title-newtask {
+    margin-top: 2px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.task-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:60%;
+    height:120px;
+    background-color: var(--colorViolet);
+    border:1px solid var(--colorWhite);
+    border-radius: 10px;
+    margin-left: -30px;
+    padding: 5px;
+    position:relative;
+}
+}
+
+ /* --------------  Footer Component ---------------*/
+
+footer {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    border-top: var(--colorWhite) 1px solid;
+    background-color: var(--colorGreen);
+}
+
+footer h1 {
+    font-size: 16px;
+    color: var(--colorDark);
+}
+
+footer p {
+    font-size: 16px;
+    color: var(--colorDark);
+}
+/* Media Query for Small Mobile */
+@media (min-width: 320px) and (max-width: 414px){
+footer h1, footer p {
+    font-size: 12px;
+}
+}
+
+
+
+ /* -----------------  ACCOUNT VIEW  -----------------*/
+   /* Tablet and Desktop */
+
+.avatar-img {
+    display:flex;
+    justify-content: center;
+   
+}
+
+.avatar-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border:3px solid white ;
+}
+
+.container-account {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.account-details {
+    display: flex;
+    flex-direction: column;
+    /* width: 400px; */
+    color:var(--colorBlue);
+    gap:20px;
+    padding-bottom: 200px;
+}
+
+.account-name, .account-mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+  /* New Form */
+
+.edit-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.username-form {
+    display: flex;
+    flex-direction: column;
+    margin:15px;
+    color:var(--colorBlue);
+    gap:5px;
+}
+
+.username-input {
+  font-size: 10px;
+  border-radius: 6px;
+  border:1px solid var(--colorLavanda);
+  height: 20px;
+  text-align: center;
+  
+}
+
+
+
+/* --------- Media Query Account Mobile -----------*/
+@media screen and (max-width: 721px){
+img {
+    width: 180px;
+}
+
+.container-account {
+    margin-top: 50px;
+}
+
+.account-details {
+    flex-direction: column;
+    /* width:200px; */
+
+}
+.account-name, .account-mail {
+   flex-direction: column;
+   gap:5px;
+ 
+}
+
+.avatar-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+}
