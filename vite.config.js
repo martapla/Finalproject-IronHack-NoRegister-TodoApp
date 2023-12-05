@@ -11,6 +11,22 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
+    },
+  },
+
+  build: {
+    rollupOptions: {
+      plugins: [
+        {
+          name: 'replace-imports',
+          resolveId(id) {
+            if (id.endsWith('.jpeg')) {
+              return { id: `path/to/your/placeholder-image.jpeg`, external: true };
+            }
+            return null;
+          },
+        },
+      ],
+    },
+  },
 })
