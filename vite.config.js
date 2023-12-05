@@ -20,5 +20,11 @@ import vue from '@vitejs/plugin-vue'
 
 
 export default defineConfig({
-  plugins: [vue()]
+  plugins: [vue()],
+
+  build: {
+    rollupOptions: {
+      external: ['src/assets/avatar2.jpeg'],
+    },
+  },
 })
