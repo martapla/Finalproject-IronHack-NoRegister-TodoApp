@@ -12,9 +12,7 @@
               <button>Register</button>
             </div>
 
-            <div class="avatar-img">
-                <img src="src/assets/avatar2.jpeg" alt ="avatar"/>
-            </div>   
+            
         </div>
     </div> 
 </template>
