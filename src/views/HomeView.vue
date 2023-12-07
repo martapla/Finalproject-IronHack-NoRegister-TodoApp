@@ -14,6 +14,7 @@
             @deleteTask="deleteTask" 
             @edit-task="editTaskToggle"
             @change-task="changeTask"
+            @complete-task="completeTask"
             />
       </div>
 
@@ -39,6 +40,14 @@ const getTasks = (name,description) => {
       
    });
  
+};
+
+// ------- COMPLETE Task --------- //
+const completeTask = (id) => {
+   const item = taskList.value.find((item) => item.id === id);
+   if (item) {
+      item.is_complete = !item.is_complete;
+   }
 };
 
 // ----- DELETE Task-----  //

@@ -12,7 +12,7 @@
             @click="$emit('edit-task',props.task.id)" class="edit-btn">Edit</button>
 
             <button 
-            @click="$emit('status-task',props.task.id)" class="status-btn">Done!</button>
+            @click="$emit('complete-task',props.task.id)" class="status-btn">Done!</button>
         </div>
     
         <!---- Edit Tasks ---->
@@ -34,7 +34,7 @@
     import { defineProps } from 'vue';
     import { ref } from 'vue';
     
-    const emit = defineEmits(["getTasksHijo", "delete-task","edit-task","change-task"]);
+    const emit = defineEmits(["getTasksHijo", "complete-task","delete-task","edit-task","change-task"]);
    
     
     const props = defineProps({
