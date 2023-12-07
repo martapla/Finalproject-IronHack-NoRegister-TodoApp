@@ -21,7 +21,7 @@
                   <p class="welcome">Welcome {{username}}!</p>
                 </li>
                 <li>
-                  <button @click="signOut" class="button-logout">Log out</button>
+                  <button @click="signIn" class="button-login">Log In</button>
                 </li>
             </ul>
           </div>
@@ -45,7 +45,7 @@
                   <router-link to="/account" class="link-router">Account</router-link>
                 </li>
                 <li>
-                  <button @click="signOut" class="button-logout">Log out</button>
+                  <button @click="signIn" class="button-login">Log In</button>
                 </li>
                 </ul>
           </div>
@@ -55,8 +55,16 @@
 </template>
 
 <script setup>
-import { RouterLink } from "vue-router";
+import { RouterLink, useRouter } from "vue-router";
 import { onMounted } from 'vue';
+
+const router = useRouter();
+
+const signIn = () => {
+  
+  router.push("/account");
+};
+
 
 onMounted(() => { 
   
