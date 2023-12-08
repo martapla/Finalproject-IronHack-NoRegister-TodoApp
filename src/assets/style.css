@@ -18,6 +18,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    border: 1px solid red;
 }
 
 body {
@@ -688,28 +689,71 @@ footer h1, footer p {
 
 .container-account {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.account-details {
+.account-details-signin {
     display: flex;
-    flex-direction: column;
-    /* width: 400px; */
+    /* flex-direction: column; */
     color:var(--colorBlue);
     gap:20px;
-    padding-bottom: 200px;
+    margin-bottom: 100px;
+    align-items: baseline;
 }
 
-.account-name, .account-mail {
+.account-details-signup {
+    display: flex;
+    /* flex-direction: column; */
+    color:var(--colorBlue);
+    gap:20px;
+    align-items: baseline;
+}
+
+.account-sign {
+    display: flex;
+    flex-direction: column;
+    color: var(--colorWhite);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.account-sign  {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
+
+.account-mail input {
+    margin-bottom: 20px;
+}
+
+
+.btn-account {
+    width:80px;
+    align-content: center;
+    border-radius: 10px;
+    border:none;
+    text-align: center;
+    font-size: 15px;
+    font-weight:bold;
+    padding: 6px;
+    background-color:var(--colorViolet);
+    color:var(--colorBlue);
+    border:2px solid var(--colorWhite);
+    cursor: pointer;
+    margin-left: 30px;
+}
+.btn-account:hover {
+    background-color: var(--colorNude);
+}
+
+
+
   /* New Form */
 
 .edit-section {

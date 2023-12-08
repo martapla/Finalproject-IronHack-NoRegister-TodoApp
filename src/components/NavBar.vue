@@ -18,7 +18,7 @@
           <div>
             <ul class="log-out-welcome">
                 <li >
-                  <p class="welcome">Welcome {{username}}!</p>
+                  <p class="welcome">Your Task List:</p>
                 </li>
                 <li>
                   <button @click="signIn" class="button-login">Log In</button>
