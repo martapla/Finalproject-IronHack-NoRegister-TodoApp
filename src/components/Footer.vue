@@ -1,10 +1,10 @@
 <template>
-    <footer>
-       <h1 class="title-footer"> IronHack Final Project </h1>
+    <footer class="footer">
+       <h1> IronHack Final Project </h1>
        <p>🎠 Made by Marta Planella </p>
      </footer>
-  </template>
+</template>
   
-  <script setup></script>
+<script setup></script>
   
-  <style></style>
+<style></style>
