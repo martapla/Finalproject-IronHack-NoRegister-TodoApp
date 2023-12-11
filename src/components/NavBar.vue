@@ -4,7 +4,7 @@
           <ul class="nav-links">
 
               <li>
-                <router-link to="/" class="link-router">Home</router-link>
+                <router-link to="/intro" class="link-router">Intro</router-link>
               </li>
               <li>
                 <router-link to="/" class="link-router">Tasks</router-link>
@@ -35,7 +35,7 @@
           <div class="burger-list">
               <ul class="mobile-links">
                 <li>
-                  <router-link to="/" class="link-router">Home</router-link>
+                  <router-link to="/intro" class="link-router">Intro</router-link>
                 </li>
                 <li>
                   <router-link to="/" class="link-router">Tasks </router-link>

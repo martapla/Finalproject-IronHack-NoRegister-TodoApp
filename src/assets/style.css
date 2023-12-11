@@ -31,184 +31,29 @@ body {
 }
 
 
-/* -------------- SignUp -SignIn Component -------------*/
+/* -------------- INTRO VIEW -------------*/
 
-.main-container {
-    background-image: url(https://images.unsplash.com/photo-1602498456745-e9503b30470b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100vh;
-    width: 100vw;
-} 
-.header {
-    height: 50px;
+.intro-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap:10px;
-} 
-.header-title-in {
-    font-size: 40px;
-    color: var(--colorBlue);
-    margin-top: 20px;
-}
+    margin-top: 100px;
+ }
 
-.header-subtitle-in {
-   color: var(--colorBlue);
-   font-size: 18px;
-   font-weight: bold;
-}
+ .intro-title {
+     color:var(--colorWhite);
+     font-size: 40px;
+     text-align: center;
+     margin-bottom: 30px;
+ }
 
-.header-title-up {
-    font-size: 40px;
-    color: var(--colorBlue);
-}
-
-.form-input {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.input-field-label {
-    display: block;
-    text-align: center;
-    border: none;
-    margin-bottom: 5px;
-    font-size: 20px;
-}
-
-.input-field {
-    border-radius: 20px;
-    border:1px solid var(--colorGreen);
-    text-align: center;
-    padding: 10px;
-    background-color:var(--colorAlmond);
-    width:100%;
-}
-
-.form-sign {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 40px;
-} 
-
-.form-sign-in {
-    background-image:url(https://i.pinimg.com/564x/49/11/0f/49110f0b15b48c68271f6afd255f4480.jpg);
-    opacity: 80%;
-    height: 480px;
-    width: 280px;
-    border:solid 3px var(--colorGreen);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-sign-up {
-    background-image:url(https://i.pinimg.com/564x/49/11/0f/49110f0b15b48c68271f6afd255f4480.jpg);
-    opacity: 80%;
-    height: 520px;
-    width: 280px;
-    border:solid 3px var(--colorGreen);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.button {
-    width:80px;
-    align-content: center;
-    border-radius: 10px;
-    border:none;
-    text-align: center;
-    font-size: 15px;
-    font-weight:bold;
-    padding: 10px;
-    margin-top:30px;
-    background-color:var(--colorGreen);
-    color:var(--colorDark);
-    border:2px solid var(--colorLavanda);
-}
-
-.button:hover {
-    background-color:var(--colorSignIn);
-}
-
-.account-box {
-    height: 100px;
-    width: 230px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
-
-.text-signup  {
-    font-size: 16px;
-    font-weight:bold;
-    margin-bottom: 20px;
-   
-}
-
-.sign-up-link {
-    display: block;
-    text-decoration: none;
-    border-radius: 10px ;
-    border-color:#0a8aab;
-    text-align: center;
-    padding: 10px;
-    background-color: var(--colorViolet);
-    margin-top: 10px;
-    color:var(--colorDark);
-    border:2px solid var(--colorLavanda);
-}
-
-.sign-up-link:hover {
-    background-color:var(--colorSignIn);
-}
-
-/* ---------  MediaQueries SignIn-SignUp  ----------*/
-/* MediaQuery for Tablets and Desktop */
-
-@media screen and (min-width: 768px) {
-.header {
-    height: 50px;
-} 
-
-.header-title-in {
-    font-size: 60px;
-    color: var(--colorBlue);
-    margin-top: 20px;
-}
-
-.header-subtitle-in {
-    font-size: 23px;
-}
-
-.header-title-up {
-    font-size: 50px;
-}
-
-.form-sign {
-   margin-top:10px;
-}
-
-.form-sign-in , .form-sign-up {
-    width: 480px;
-    border-radius: 30px;
-}
-}
+ .intro-description {
+    
+    font-size: 24px;
+    width: 50vw;
+    margin: 0 auto;
+    color:var( --colorDark);
+ }
 
  /* -------------------  HOME VIEW  -----------------------*/ 
 
