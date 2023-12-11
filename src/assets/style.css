@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 80px;
  }
 
  .intro-title {
@@ -53,7 +53,26 @@ body {
     width: 50vw;
     margin: 0 auto;
     color:var( --colorDark);
+    margin-bottom: 20px;
  }
+
+ /*  Mobile and Tablet */
+@media (max-width: 767px){
+    .intro-container {
+        margin-top: 20px;
+    }
+
+    .intro-title {
+       font-size: 30px;
+       margin-bottom: 15px;
+    }
+  
+    .intro-description {
+        font-size: 20px;
+        width: 80vw;
+    }
+}
+    
 
  /* -------------------  HOME VIEW  -----------------------*/ 
 
